@@ -72,19 +72,50 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "Speed Aqua Sea — Servicii Profesionale de Curățenie Constanța" },
+      {
+        name: "description",
+        content:
+          "Firmă de curățenie profesională în județul Constanța: apartamente, case, hale, birouri, depozite și spații comerciale. Contracte pentru companii.",
+      },
+      { name: "author", content: "Speed Aqua Sea" },
+      { name: "theme-color", content: "#1d4ed8" },
+      { property: "og:title", content: "Speed Aqua Sea — Curățenie Profesională Constanța" },
+      {
+        property: "og:description",
+        content:
+          "Servicii de curățenie pentru persoane fizice și companii în Constanța. Echipamente și produse profesionale incluse.",
+      },
       { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
+      { property: "og:site_name", content: "Speed Aqua Sea" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
+      { rel: "stylesheet", href: appCss },
+      { rel: "preconnect", href: "https://fonts.googleapis.com" },
+      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
         rel: "stylesheet",
-        href: appCss,
+        href: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@500;600;700;800&display=swap",
+      },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          name: "Speed Aqua Sea",
+          description:
+            "Servicii profesionale de curățenie pentru persoane fizice și companii în județul Constanța.",
+          telephone: "+40738877347",
+          areaServed: "Județul Constanța",
+          address: {
+            "@type": "PostalAddress",
+            addressRegion: "Constanța",
+            addressCountry: "RO",
+          },
+        }),
       },
     ],
   }),
