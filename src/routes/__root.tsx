@@ -80,7 +80,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
       { name: "author", content: "Speed Aqua Sea" },
       { name: "theme-color", content: "#1d4ed8" },
-      { property: "og:title", content: "Speed Aqua Sea — Curățenie Profesională Constanța" },
+      { property: "og:title", content: "Speed Aqua Sea — Servicii Profesionale de Curățenie Constanța" },
       {
         property: "og:description",
         content:
@@ -89,6 +89,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:type", content: "website" },
       { property: "og:site_name", content: "Speed Aqua Sea" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Speed Aqua Sea — Servicii Profesionale de Curățenie Constanța" },
+      { name: "description", content: "Premium website for Speed Aqua Sea, a cleaning service in Constanța, Romania." },
+      { property: "og:description", content: "Premium website for Speed Aqua Sea, a cleaning service in Constanța, Romania." },
+      { name: "twitter:description", content: "Premium website for Speed Aqua Sea, a cleaning service in Constanța, Romania." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/df8c4e85-f27b-48c4-9b55-ef2120a8f256/id-preview-512180c6--cb79d66b-da20-446d-9557-a64cf0d1e0f8.lovable.app-1779180193428.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/df8c4e85-f27b-48c4-9b55-ef2120a8f256/id-preview-512180c6--cb79d66b-da20-446d-9557-a64cf0d1e0f8.lovable.app-1779180193428.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
